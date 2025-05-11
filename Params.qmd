@@ -1,0 +1,48 @@
+---
+title: "Простой пример параметризации"
+author: "И. О. Фамилия"
+
+lang: ru
+
+format: html
+
+params:
+  my_class: "compact"
+  alpha: 1
+
+code-tools:
+  source: true
+---
+
+```{r}
+#| echo: false
+# возможные классы:
+# "compact", "midsize", "suv", "2seater", "minivan", "pickup", "subcompact"
+```
+
+```{r}
+#| label: setup
+#| include: false
+
+library(tidyverse)
+
+class <- mpg |> filter(class == params$my_class)
+```
+
+# Экономия топлива для класса `r params$my_class`
+
+Значение $\alpha$ равно `r params$alpha`.
+
+```{r}
+#| message: false
+#| fig.width: 8
+#| fig.heigh: 5
+#| label: fig-penguins-margins
+#| fig-cap: "Пример параметризации"
+
+ggplot(class, aes(x = displ, y = hwy)) + 
+  geom_point() + 
+  geom_smooth(se = FALSE) +
+    labs(title = glue::glue("Класс {params$my_class}")) +
+    theme_grey(base_size = 14)
+```
