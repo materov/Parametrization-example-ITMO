@@ -2,16 +2,15 @@
 title: "Простой пример параметризации"
 author: "И. О. Фамилия"
 
+toc: true
 lang: ru
-
 format: html
+code-tools:
+  source: true
 
 params:
   my_class: "compact"
   alpha: 1
-
-code-tools:
-  source: true
 ---
 
 ```{r}

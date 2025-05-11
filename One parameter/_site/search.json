@@ -1,0 +1,9 @@
+[
+  {
+    "objectID": "Params.html",
+    "href": "Params.html",
+    "title": "Простой пример параметризации",
+    "section": "",
+    "text": "Экономия топлива для класса compact\nЗначение \\(\\alpha\\) равно 1.\n\nggplot(class, aes(x = displ, y = hwy)) + \n  geom_point() + \n  geom_smooth(se = FALSE) +\n    labs(title = glue::glue(\"Класс {params$my_class}\")) +\n    theme_grey(base_size = 14)\n\n\n\n\n\n\n\nРисунок 1: Пример параметризации"
+  }
+]

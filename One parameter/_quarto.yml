@@ -1,0 +1,10 @@
+project:
+  type: website
+  preview:
+    port: 1111
+
+# draft: true
+
+website:
+  repo-url: https://github.com/quarto-dev/quarto-demo
+  repo-actions: [source]
