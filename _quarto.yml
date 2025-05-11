@@ -6,7 +6,10 @@ project:
 draft: true
 
 website:
-  repo-url: https://github.com/quarto-dev/quarto-demo
+  repo-url: https://github.com/materov/Parametrization-example-ITMO/
   repo-actions: [source]
   # https://quarto.org/docs/websites/website-drafts.html
   draft-mode: visible
+  announcement: 
+    content: "**Новый сайт** - это анонс!" 
+    position: below-navbar 
