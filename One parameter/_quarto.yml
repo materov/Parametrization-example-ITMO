@@ -3,8 +3,10 @@ project:
   preview:
     port: 1111
 
-# draft: true
+draft: true
 
 website:
   repo-url: https://github.com/quarto-dev/quarto-demo
   repo-actions: [source]
+  # https://quarto.org/docs/websites/website-drafts.html
+  draft-mode: visible
